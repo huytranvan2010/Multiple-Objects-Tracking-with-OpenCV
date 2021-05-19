@@ -80,7 +80,7 @@ while True:
         # bắt đầu tracking bằng cách cung cấp tọa độ bounding boxes
         """ Đây chính là khởi tạo tracker cho bounding boxes đó """
         for bb in box:
-            tracker = createTracker(tracker_type)
+            tracker = createTracker(tracker_type)   # phải tạo mới, ko dùng lại được
             trackers.add(tracker, frame, bb)
 
     # Nhấn nhấn "q" sẽ thoát ra
